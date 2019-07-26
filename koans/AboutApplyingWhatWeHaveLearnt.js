@@ -41,6 +41,20 @@ describe("About Applying What We Have Learnt", function() {
 
       /* solve using filter() & all() / any() */
 
+      
+      products.filter(function(currentItem) {
+        if(currentItem.containsNuts === false) {
+          var noMushrooms - _.every(currentItem.ingredients, function(currentIngredient) {
+            return currentIngredient !== 'mushrooms';
+          });
+            return noMushrooms
+          } else {
+            return false;
+          }
+        //check ingredients array and make sure mushrooms arent there
+        //constainsNut === false
+      })
+
       expect(productsICanEat.length).toBe(FILL_ME_IN);
   });
 

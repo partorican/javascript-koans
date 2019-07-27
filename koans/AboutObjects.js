@@ -24,7 +24,7 @@ describe("About Objects", function () {
       henchman: "Pinky",
       battleCry: function (noOfBrains) {
         return "They are " + this.henchman + " and the" +
-          Array(noOfBrains + 2).join(" " + this.mastermind);
+          Array(noOfBrains + 1).join(" " + this.mastermind);
       }
     };
 
